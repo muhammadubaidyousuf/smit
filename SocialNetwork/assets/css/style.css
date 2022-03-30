@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&family=Source+Code+Pro:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.navbox{
+    position: fixed;
+    /* height: 100px; */
+    width: 100%;
+    top: 0;
+}
+.navbar{
+    height: 50px;
+    background-color: #8cb2c5;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .left-nav{
+    width: 400px;
+    /* background-color: rgb(255, 255, 255); */
+    margin-left: 10px;
+}
+.navbar .left-nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+.navbar .left-nav ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: aliceblue;
+    /* background-color: aliceblue; */
+    padding: 10px;
+}
+.navbar .left-nav ul li a:hover{
+    background-color: blue;
+}
+
+.navbar .right-nav i{
+    font-size: 18px;
+    margin-right: 10px;
+    color: #fff;
+    padding: 10px;
+}
+.navbar .right-nav i:hover{
+    background-color: blue;
+}
+#count{
+    position: absolute;
+    top: 5px;
+    background: red;
+    padding: 2px 5px;
+    /* margin: 0px; */
+    /* width: 19px; */
+    /* text-align: center; */
+    border-radius: 50%;
+    font-size: 13px;
+    left: 387px;
+}
+
+/* navbar complete  */
+
+.container{
+    width: 100%;
+    /* background-color: beige; */
+    display:flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.center-con{
+    width: 80%;
+    height: 1000px;
+    display: flex;
+    justify-content: space-around;
+}
+.center-con .left{
+    /* background-color:red; */
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+}
+.center-con .center{
+    width: 50%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+}
+.center-con .right{
+    width: 20%;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+}
+.card{
+    border: 1px solid #e1e1e1;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: fit-content;
+    flex-wrap: wrap-reverse;
+    width: -webkit-fill-available;
+}
+.card .profile{
+    border-bottom: 1px solid #e7e7e7;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card .profile h4{
+    font-weight: 700;
+    font-size: 20px;
+}
+.card .profile img{
+    height: 100px;
+    width: 110px;
+}
+.profile-info{
+    padding: 10px;
+}
+.profile-info p{
+    margin-bottom: 10px;
+}
+.profile-info i{
+    color: #8cb2c5;
+}
+.card .group{
+    /* background-color: aqua; */
+}
+.card .tags{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.card .tags p{
+    background-color: #8cb2c5;
+    font-size: 10px;
+    color: #fff;
+    padding: 2px;
+    margin: 3px;
+    font-weight: 700;
+}
+.ul-post{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.ul-post input[type="text"]{
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: none;
+    border-bottom:1px solid rgb(187, 187, 187) ;
+}
+.ul-post button{
+    height: 38px;
+    /* background-color: blue; */
+    color: #fff;
+    width: 80px;
+    border: none;
+    cursor: pointer;
+    font-weight: 800;
+    background-color: #8cb2c5;;
+
+}
+.card-bg{
+    margin: 5px;
+    border-radius: 5px;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+    flex-wrap: wrap-reverse;
+    width: -webkit-fill-available;
+}
+.card-bg-info{
+    background-color: #ffe7e7;
+    padding: 10px;
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    border: 1px solid rgb(252, 188, 188);
+    border-radius: 5px;
+}
+
+.card-bg-info span i{
+    padding: 10px 10px;
+    background-color: rgb(228, 228, 228);
+    font-size: 20px;
+    margin-top: -8px;
+    margin-right: -7px;
+}
