@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Rubik', sans-serif;
+}
+button{
+    border: none;
+    cursor: pointer;
 }
 
 .navbox{
@@ -95,12 +99,16 @@
     /* background-color: blue; */
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    height: fit-content;
 }
 .center-con .right{
     width: 20%;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    height: fit-content;
 }
 .card{
     border: 1px solid #e1e1e1;
@@ -145,6 +153,13 @@
 }
 .card .group{
     /* background-color: aqua; */
+}
+
+.card .group p{
+    padding: 7px;
+}
+.card .group i{
+    color: #8cb2c5;
 }
 .card .tags{
     display: flex;
@@ -214,4 +229,98 @@
     font-size: 20px;
     margin-top: -8px;
     margin-right: -7px;
+}
+
+.card .right-cards{
+    /* color: #8cb2c5; */
+    text-align: center;
+}
+
+.card .right-cards img{
+    height: 120px;
+    width: 100%;
+}
+.card .right-cards img, P, button{
+    padding: 5px;
+}
+
+.card .right-cards button{
+    width: 100%;
+    height: 35px;
+    margin-top: 5px;
+}
+.acc-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.acc-btn button{
+    padding: 10px;
+    width: 70px;
+    margin: 1px;
+}
+.acc-btn #yes{
+    background-color: rgb(241, 32, 32);
+    color: #fff;
+}
+.acc-btn #no{
+    color: #fff;
+    background-color: green;
+}
+
+.ads {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seg{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.card .post-profile{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.card .post-profile img{
+    height: 50px;
+}
+
+.card .post-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: fit-content;
+}
+.card .post-text{
+    width: 100%;
+}
+
+.card .post-img img{
+    height: 200px;
+    width: 240px;
+    padding: 5px;
+}
+.card .post-btn{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.card .post-btn button{
+    padding: 10px;
+    margin: 5px;
+    background-color: #8cb2c5;
+    color: #fff;
 }
