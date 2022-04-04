@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.left{
+    width: 50%;
+    background: url("../img/titter_img.png") no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: fit-content;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tw-cover{
+    height: 400px;
+}
+.right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left:25px ;
+}
+.right h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.right h3{
+    font-size: 40px;
+}
+.right button{
+    width: 100%;
+    border: none;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 5px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right button img{
+    width: 35px;
+    height: 35px;
+}
+#ph-login{
+    background-color:rgb(29, 155, 240);
+    color: #fff;
+    margin-top: 10px;
+    padding: 12px;
+}
+.right .btn-area{
+    margin-top: 60px;
+    width: 50%;
+}
+
+footer{
+    width: 100%;
+    height: 80px;
+}
+
+footer .footer-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer-links ul{
+    list-style: none;
+    padding: 5px;
+}
+footer .footer-links ul li{
+    display: inline-block;
+    padding: 5px;
+}
+footer .footer-links ul li a{
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+footer .footer-links ul li a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 600px) {
+    .main{
+        flex-direction: column-reverse;
+    }
+    .right{
+        width: 100%;
+    }
+    .left{
+        width: 100%;
+    }
+    .right .btn-area{
+        width: 100%;
+        padding-right: 20px;
+    }
+}
