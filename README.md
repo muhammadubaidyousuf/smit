@@ -1,3 +1,3 @@
-# This is my first smit repo
-git starting by smit
+# All SMIT Assiments 
+HTML, CSS, Bootsrap, 
 
