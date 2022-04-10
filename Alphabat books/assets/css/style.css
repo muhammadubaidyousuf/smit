@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    @import url("./assets/fonts/DMSans-Medium.ttf");
+}
+.main{
+    /* height: 300px; */
+    width: 100%;
+    border: 1px solid gray;
+    margin-top: 20px;
+}
+
+.box{
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.box span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    margin: 10px;
+    width: 100px;
+    height: 55px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(204, 203, 203, 0.19), 0 6px 6px rgba(235, 235, 235, 0.23);
+}
+.box span:hover{
+    background-color: rgb(92, 0, 0);
+}
+
+
+.box a{
+    text-decoration: none;
+}
+.m-box img{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 400px;
+    border: 2px solid gray;
+    margin: 10px;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+.img-box{
+    width: 100%;
+    display: flex;
+    background-color: antiquewhite;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box span:hover ~ .m-box img{
+    border: 2px solid red;
+}
+
+.img-box h1{
+    font-size: 70px;
+}

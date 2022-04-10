@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Good Vibes Form</title>
+	<style>
+		.main{
+			background-color: red;
+		}
+		input{
+			padding: 12px;
+			margin: 25px;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<p>Tell us somthing positive that happened to you today:</p><br/>
+		<label for="name">
+			Name: <input type="text" name="name" placeholder="Enter your name" id="name">
+		</label>
+		<br/>
+		<label for="email">
+			Email: <input type="email" name="email" placeholder="Enter your email address" id="email">
+		</label>
+		<br/>
+		<label for="scale">
+			On a scale of 10-10, How good was it?: <input type="text" name="scale" placeholder="Enter a number between 1 an 10" id="scale">
+		</label>
+		<br/>
+		<label>
+			Where did it heppend?: 
+			<select>
+				<option>At Home</option>
+			</select>
+		</label>
+		<br/>
+		<label>
+			At what time of day did it heppend?
+		</label>
+		<br/> 
+		<label>
+			<input type="radio" name="timing" >
+			Morning
+		</label>
+		<br/>
+		<label>
+			<input type="radio" name="timing" >
+			Afternoon
+		</label>
+		<br/>
+		<label>
+			<input type="radio" name="timing" >
+			Evening
+		</label>
+	</div>
+</body>
+</html>
